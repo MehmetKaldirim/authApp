@@ -9,7 +9,6 @@ function SignupScreen() {
 
   async function signupHandler({ email, password }) {
     setIsAuthenticating(true);
-    console.log("key signup = ");
     await createUser(email, password);
     setIsAuthenticating(false);
   }
